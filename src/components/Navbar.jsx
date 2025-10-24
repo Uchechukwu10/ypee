@@ -71,6 +71,12 @@ export default function Navbar() {
             >
               Contact
             </NavLink>
+            <NavLink 
+                to="/support-us" // Add link for Support Us
+                className={({ isActive }) => isActive ? activeLinkStyle : linkStyle}
+              >
+                Support Us
+              </NavLink>
           </div>
         </div>
 
@@ -174,6 +180,13 @@ export default function Navbar() {
             >
               Contact
             </NavLink>
+            <NavLink 
+            to="/support-us" // Add link for Support Us
+            className={({ isActive }) => isActive ? activeMobileLinkStyle : mobileLinkStyle}
+            onClick={closeMobileMenu} 
+          >
+            Support Us
+          </NavLink>
           </div>
         </div>
     </nav>

@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import SupportUsPage from './pages/SupportUsPage';
 
 // Layout component to wrap all pages with a Navbar and Footer
 function Layout() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="support-us" element={<SupportUsPage />} /> {/* Add route for Support Us */}
           <Route path="*" element={<NotFoundPage />} /> {/* Handles any undefined routes */}
         </Route>
       </Routes>
