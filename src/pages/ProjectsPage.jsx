@@ -14,17 +14,17 @@ export default function ProjectsPage() {
   // <-- UPDATE THIS DATA WITH YOUR PROJECTS -->
   const projectsData = [
       {
-          image: '/project1.jpg', // Image in /public folder
+          image: '/listening-youth.jpg', // Image in /public folder
           title: 'Tech for Peace Initiative',
           description: 'Training 500 youths in coding and digital skills to provide them with alternatives to conflict and unemployment.'
       },
       {
-          image: '/project2.jpg', // Image in /public folder
+          image: '/happy-children.jpg', // Image in /public folder
           title: 'Agro-Entrepreneurship Program',
           description: 'Empowering rural communities by providing training and seed funding for sustainable farming and agribusiness ventures.'
       },
       {
-          image: '/project3.jpg', // Image in /public folder
+          image: '/children-on-line.jpg', // Image in /public folder
           title: 'Community Dialogue Forums',
           description: 'Organizing forums that bring together youth from different ethnic and religious backgrounds to foster understanding and peace.'
       }

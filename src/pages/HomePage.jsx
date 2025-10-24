@@ -1,4 +1,5 @@
 import React from "react";
+import { TrendingUp, Handshake, Lightbulb, ShieldCheck } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -6,9 +7,9 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative h-[60vh] w-[100vw] bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/hero-image.jpg')" }} // <-- REPLACE with your hero image
+        style={{ backgroundImage: "url('/learning-youth.jpg')" }} // <-- REPLACE with your hero image
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
             {/* <-- PASTE YOUR HEADLINE HERE */}
@@ -196,83 +197,22 @@ export default function HomePage() {
             {/* <-- PASTE YOUR STATISTICS HERE --> */}
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center items-center">
               <h3 className="text-3xl font-bold text-green-600">Empowerment</h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-24 h-24 my-2 text-green-600"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 9v3.75m3-10.5l-1.5 1.5m-5.25-1.5L7.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 19.5l-3.75-3.75m0 0l-3.75 3.75M12 15.75V9"
-                />
-              </svg>
+              <TrendingUp className="w-24 h-24 my-2 text-green-600" />
+               
             </div>
             <div className="bg-white p-6 rounded-lg shadow- flex flex-col justify-center items-center">
               <h3 className="text-3xl font-bold text-green-600">Integrity</h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-24 h-24 my-2 text-green-600"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z"
-                />
-              </svg>
+              <ShieldCheck className="w-24 h-24 my-2 text-green-600"/>
             </div>
             <div className="bg-white p-6 rounded-lg shadow- flex flex-col justify-center items-center">
               <h3 className="text-3xl font-bold text-green-600">Innovation</h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-24 h-24 my-2 text-green-600"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311l-3.75 0M9 17.25a3 3 0 013-3h0a3 3 0 013 3v.003M5.527 16.29a3.375 3.375 0 01-.133-1.666V12a3.375 3.375 0 013.375-3.375h5.462c1.858 0 3.375 1.517 3.375 3.375v2.624c0 .622-.182 1.222-.515 1.748l-.14.212M16.5 10.5V7.125c0-1.858-1.517-3.375-3.375-3.375h-5.462C5.815 3.75 4.3 5.267 4.3 7.125v3.375"
-                />
-              </svg>
+              <Lightbulb className="w-24 h-24 my-2 text-green-600"/>
             </div>
             <div className="bg-white p-6 rounded-lg shadow- flex flex-col justify-center items-center">
               <h3 className="text-3xl font-bold text-green-600">
                 Collaboration
               </h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-24 h-24 my-2 text-green-600"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 21v-7.5m-3.75 7.5v-7.5m-3.75 7.5v-7.5m9 3.75l-3-3l-3 3m1.5-12v7.5"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 21a9 9 0 110-18 9 9 0 010 18z"
-                />
-              </svg>
+             <Handshake className="w-24 h-24 my-2 text-green-600"/>
             </div>
           </div>
         </div>
