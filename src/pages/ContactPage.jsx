@@ -9,7 +9,7 @@ export default function ContactPage() {
             <div className="max-w-md mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
                 <div className="space-y-4 text-left">
                      {/* <-- PASTE YOUR CONTACT INFO HERE --> */}
-                    <p className="text-lg"><strong className="text-gray-800">Email:</strong> <a href="mailto:info@nypei.org" className="text-green-600 hover:underline">info@nypei.org</a></p>
+                    <p className="text-lg"><strong className="text-gray-800">Email:</strong> <a href="mailto:info@y4pee.org" className="text-green-600 hover:underline">info@y4pee.org</a></p>
                     <p className="text-lg"><strong className="text-gray-800">Phone:</strong> +234 123 456 7890</p>
                     <p className="text-lg"><strong className="text-gray-800">Address:</strong> 123 Peace Avenue, Abuja, Nigeria</p>
                 </div>

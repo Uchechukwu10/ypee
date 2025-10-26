@@ -18,8 +18,8 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
           {/* <-- PASTE YOUR "ABOUT US" CONTENT HERE, broken into paragraphs --> */}
           <p>
-            Nigeria Youth for Peace and Entrepreneurial Initiative was founded
-            in 2020 with a singular mission: to channel the vibrant energy of
+            Youth for Peace and Entrepreneurial Empowerment was founded
+           with a singular mission: to channel the vibrant energy of
             our nation's youth towards positive, constructive, and sustainable
             outcomes. We believe that peace and prosperity are two sides of the
             same coin.

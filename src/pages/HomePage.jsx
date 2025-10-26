@@ -1,7 +1,14 @@
 import React from "react";
 import { TrendingUp, Handshake, Lightbulb, ShieldCheck } from 'lucide-react';
+import { projectsData } from '../data/projects';
+import { NavLink } from "react-router-dom";
 
 export default function HomePage() {
+  
+  // Get the first 3 projects to display on the homepage
+  // Make sure projectsData exists and has items before slicing
+  const featuredProjects = projectsData && projectsData.length > 0 ? projectsData.slice(0, 3) : [];
+
   return (
     <>
       {/* Hero Section */}
@@ -31,7 +38,10 @@ export default function HomePage() {
         focus:outline-none focus:ring-4 focus:ring-green-300
       `}
           >
-            Support Us
+            <a
+                href="/support-us"
+                className="flex justify-center items-center"
+              >Support Us
             {/* Arrow Icon */}
             <svg
               className="w-5 h-5"
@@ -46,7 +56,7 @@ export default function HomePage() {
                 strokeWidth="2"
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               ></path>
-            </svg>
+            </svg></a>
           </button>
         </div>
       </section>
@@ -69,7 +79,7 @@ export default function HomePage() {
                 Who We Are
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Nigeria Youth for Peace and Entrepreneurial Initiative (NYPEI)
+                Youth for Peace and Entreprenuerial Empowerment (Y4PEE)
                 was founded on the belief that empowering our youth is the most
                 effective path to lasting peace and national prosperity. We
                 provide the tools, training, and support necessary to turn
@@ -168,6 +178,39 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* --- Featured Projects Section --- */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-12">Our Recent Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {/* Ensure featuredProjects is not empty before mapping */}
+            {featuredProjects.length > 0 ? (
+              featuredProjects.map((project) => (
+                <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden text-left transform hover:scale-105 transition-transform duration-300">
+                  <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover"/>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                    <NavLink to={`/projects/${project.id}`} className="text-sm font-semibold text-green-600 hover:text-green-800">
+                      Read More &rarr;
+                    </NavLink> 
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600 md:col-span-2 lg:col-span-3">No projects to display yet.</p> // Placeholder if no projects
+            )}
+          </div>
+          <NavLink 
+            to="/projects" 
+            className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+          >
+            View All Projects
+          </NavLink>
+        </div>
+      </section>
+
       {/* Impact Section */}
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-6 text-center">

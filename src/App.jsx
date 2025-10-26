@@ -8,6 +8,8 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import SupportUsPage from './pages/SupportUsPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
+import ScrollToTop from './components/ScrollToTop';
 
 // Layout component to wrap all pages with a Navbar and Footer
 function Layout() {
@@ -25,10 +27,12 @@ function Layout() {
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="projects/:projectId" element={<ProjectDetailPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="support-us" element={<SupportUsPage />} /> {/* Add route for Support Us */}
@@ -36,6 +40,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
   );
 }
 
